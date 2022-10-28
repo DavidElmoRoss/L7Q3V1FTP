@@ -55,7 +55,7 @@ int main(void)
           }
           wait_ms(1000);                
           bob=0;
-                                          // Statement to set LCD to CYAN  
+                                           
         }
     }                       
 }
