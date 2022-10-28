@@ -1,7 +1,7 @@
 /*
     Modify this code so that when motion is NOT detected, the LCD
     shows a CYAN background, and when it is detected it shows a
-    MAROON background. Refer to chart on Page 3 of Lab 6
+    MAROON background. Refer to chart shown
     
     You should  get the message StoP Covid19   on the 4 digit display      
 */
@@ -31,7 +31,7 @@ void LOW(void)
 } 
 int main(void)
 {
-                       
+    PIR.rise(&LOW);                                     
     segment.clear();                
     segment.setColon(0);            
     segment.setBrightness(4);
